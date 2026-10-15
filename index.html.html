@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Oferta Académica | SIAMED S.A.S.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra de Navegación -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <img src="logo-siamed.png" alt="SIAMED Soluciones Integrales" class="logo-img" onerror="this.outerHTML='<span class=\'logo-fallback\'>SIAMED</span>'">
+      </a>
+      <nav class="nav-links">
+        <a href="#cursos">Cursos</a>
+        <a href="#inscripciones">Inscripciones</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="circle-decoration"></div>
+    <div class="container hero-content">
+      <div class="title-accent-wrap">
+        <div class="accent-bar-large"></div>
+        <h1 class="hero-title">Portafolio Oferta<br>Académica</h1>
+      </div>
+      <p class="hero-subtitle">Fortalece tus conocimientos y desarrolla nuevas competencias con SIAMED.</p>
+    </div>
+  </section>
+
+  <!-- Sección Cursos -->
+  <main class="container main-content" id="cursos">
+    
+    <div class="section-header">
+      <div class="accent-bar-small"></div>
+      <h2 class="section-title">Cursos disponibles</h2>
+    </div>
+    <p class="section-desc">Explora las capacitaciones de SIAMED y encuentra la formación adecuada para tu equipo.</p>
+    <p class="section-instruction">Selecciona la categoría de tu interés para ver los cursos disponibles</p>
+
+    <!-- Barra de búsqueda y filtros -->
+    <div class="filter-toolbar">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="searchInput" placeholder="Buscar curso por nombre, palabra clave o norma..." aria-label="Buscar curso">
+      </div>
+      <div class="filter-selects">
+        <select id="modalidadFilter" aria-label="Filtrar por modalidad">
+          <option value="">Todas las modalidades</option>
+          <option value="Virtual">Virtual</option>
+          <option value="Presencial">Presencial</option>
+          <option value="Híbrida">Híbrida</option>
+        </select>
+        <select id="categoriaFilter" aria-label="Filtrar por área">
+          <option value="">Todas las áreas</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Contenedor dinámico de categorías y cursos -->
+    <div id="categoriesAccordion" class="categories-accordion">
+      <!-- Generado dinámicamente vía app.js -->
+    </div>
+
+    <div id="noResults" class="no-results hidden">
+      <p>No se encontraron capacitaciones que coincidan con los criterios de búsqueda.</p>
+      <button id="clearFiltersBtn" class="btn-secondary">Restablecer filtros</button>
+    </div>
+
+    <p class="disclaimer-text">La programación y disponibilidad de cada capacitación se confirmará con SIAMED.</p>
+  </main>
+
+  <!-- Sección Información e Inscripciones -->
+  <section class="info-section" id="inscripciones">
+    <div class="container">
+      <div class="section-header">
+        <div class="accent-bar-small"></div>
+        <h2 class="section-title">Información e inscripciones</h2>
+      </div>
+      <p class="info-desc">Consulta la disponibilidad de nuestros cursos, solicita información e inicia tu proceso de inscripción.</p>
+      <div class="info-buttons">
+        <a href="https://wa.me/573163741046?text=Hola,%20deseo%20solicitar%20informaci%C3%B3n%20sobre%20las%20capacitaciones%20de%20SIAMED." target="_blank" rel="noopener noreferrer" class="btn-action">Solicitar Información</a>
+        <a href="https://wa.me/573206931796?text=Hola,%20deseo%20iniciar%20un%20proceso%20de%20inscripci%C3%B3n%20a%20un%20curso." target="_blank" rel="noopener noreferrer" class="btn-action">Inscripción</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto (Footer Corporativo) -->
+  <footer class="footer-corporate" id="contacto">
+    <div class="container">
+      <div class="footer-header">
+        <div class="accent-bar-footer"></div>
+        <h2 class="footer-title">Contacto</h2>
+      </div>
+      <p class="footer-subtext">Datos de contacto editables. SIAMED confirmará los canales oficiales para solicitar información.</p>
+
+      <div class="contact-grid">
+        <div class="contact-col">
+          <span class="contact-label">Correo electrónico</span>
+          <a href="mailto:comercial@siamedsas.com" class="contact-val">comercial@siamedsas.com</a>
+        </div>
+        <div class="contact-col">
+          <span class="contact-label">Teléfono</span>
+          <a href="tel:+573206931796" class="contact-val">+57 3206931796</a>
+        </div>
+        <div class="contact-col">
+          <span class="contact-label">WhatsApp</span>
+          <a href="https://wa.me/573163741046" target="_blank" rel="noopener noreferrer" class="contact-val">+57 316 374 1046</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="subfooter">
+      <div class="container subfooter-content">
+        <span>SIAMED, tu mejor decisión</span>
+        <a href="#" class="back-to-top">Volver arriba</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal de Ficha Técnica Detallada -->
+  <div id="courseModal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Cerrar ventana">&times;</button>
+      <div class="modal-badge-row">
+        <span id="modalCategory" class="badge-tag"></span>
+        <span id="modalStatus" class="badge-status"></span>
+      </div>
+      <h3 id="modalTitle" class="modal-title"></h3>
+      
+      <div class="modal-grid-meta">
+        <div><strong>Modalidad:</strong> <span id="modalModalidad"></span></div>
+        <div><strong>Duración:</strong> <span id="modalDuracion"></span></div>
+        <div><strong>Fechas:</strong> <span id="modalFechas"></span></div>
+        <div><strong>Inversión:</strong> <span id="modalPrecio"></span></div>
+      </div>
+
+      <div class="modal-body">
+        <h4>Objetivos y Alcance</h4>
+        <p id="modalDesc"></p>
+        <div id="modalDetalleExtra"></div>
+      </div>
+
+      <div class="modal-actions">
+        <a id="modalWhatsAppBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary-modal">
+          Solicitar Inscripción por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
